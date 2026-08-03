@@ -14,31 +14,6 @@
     margin-bottom: 2.5rem;
 }
 
-form {
-    position: absolute;
-    width: 100%;
-    bottom: 50px;
-    padding: 12px;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 3rem;
-}
-
-form label {
-    font-weight: 900;
-    margin: 2rem 0;
-    display: block;
-}
-
-form input {
-    width: 60%;
-    height: 36px;
-}
-
-form button {
-    height: 36px;
-}
-
 ul li {
     display: flex;
     align-items: center;

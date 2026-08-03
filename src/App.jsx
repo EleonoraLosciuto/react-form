@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import initialArticles from './assets/articles'
+import Form from './components/Form.jsx'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
 
 
   return (
+
     <div className='container'>
       <h1>Giornale del Web</h1>
       <ul>
@@ -40,11 +42,7 @@ function App() {
           )
         }
       </ul>
-      <form onSubmit={addNewArticle}>
-        <label htmlFor="titolo">Aggiungi nuovo articolo: </label>
-        <input onChange={handleInput} type="text" label="titolo" placeholder="Aggiungi Titolo dell'articolo" />
-        <button type="submit">Invia</button>
-      </form>
+      <Form addNewArticle={addNewArticle} handleInput={handleInput} />
     </div>
   )
 }
