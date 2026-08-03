@@ -5,12 +5,13 @@ This is the 25th exercise I have completed as part of the web development master
 
 ## 📝 Task
 The objective of this assignment is to build a blog article manager in React, broken down into the following requirements:
-### Milestone 1: Create a page that displays a list of articles, showing only their titles.
-### Milestone 2: Add a simple form containing an input field to enter the title of a new blog article. Upon form submission, render the updated list of articles.
-
-## 🌟 Bonus
-### Delete functionality: Add the ability to remove individual articles using a delete icon.
-### Component Architecture: Split the application logic and UI into multiple reusable React components.
+* Milestone 1: 
+Create a page that displays a list of articles, showing only their titles.
+* Milestone 2: 
+Add a simple form containing an input field to enter the title of a new blog article. Upon form submission, render the updated list of articles.
+### 🌟 Bonus
+* Delete functionality: Add the ability to remove individual articles using a delete icon.
+* Component Architecture: Split the application logic and UI into multiple reusable React components.
 
 ## 📂 Project Structure
 ```
