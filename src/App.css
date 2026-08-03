@@ -38,3 +38,15 @@ form input {
 form button {
     height: 36px;
 }
+
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+ul li button {
+    padding: 1rem;
+    font-size: 2rem;
+    vertical-align: middle;
+}
