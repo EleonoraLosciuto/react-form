@@ -1,24 +1,27 @@
 form {
-    position: absolute;
     width: 100%;
-    bottom: 50px;
     padding: 12px;
     text-align: center;
     margin: 0 auto;
-    font-size: 3rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 form label {
     font-weight: 900;
+    font-size: 2rem;
     margin: 2rem 0;
-    display: block;
 }
 
-form input {
-    width: 60%;
+form input,
+form textarea {
     height: 36px;
 }
 
 form button {
-    height: 36px;
+    font-size: 3rem;
+    margin-top: 25px;
+    width: fit-content;
+    align-self: center;
 }

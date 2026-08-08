@@ -5,24 +5,14 @@ import Form from './components/Form.jsx'
 
 function App() {
 
-  const [articles, setArticles] = useState(initialArticles)
-  const [newArticle, setNewArticle] = useState("");
-
-  const handleInput = (e) => {
-    setNewArticle(e.target.value);
-  };
-
-  const addNewArticle = (e) => {
-    e.preventDefault();
-    setArticles([...articles, newArticle]);
-  };
+  const [articles, setArticles] = useState(initialArticles);
+  console.log(articles);
 
   const cancelArticle = i => {
     setArticles(
       articles.filter((article, index) => index !== i)
     )
   };
-
 
   return (
 
@@ -31,18 +21,19 @@ function App() {
       <ul>
         {
           articles.map((article, i) =>
-            <li key={i}>
+            <li key={article.id}>
               <a href="#">
-                <h2>{article}</h2>
+                <h2>{article.titolo}</h2>
               </a>
               <button onClick={() => cancelArticle(i)}>
                 <i className='bi bi-trash-fill'></i>
               </button>
             </li>
+
           )
         }
       </ul>
-      <Form addNewArticle={addNewArticle} handleInput={handleInput} />
+      <Form articles={articles} setArticles={setArticles} />
     </div>
   )
 }
