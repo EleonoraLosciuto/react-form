@@ -4,6 +4,8 @@ This is the 25th exercise I have completed as part of the web development master
 ## Repository name: react-form
 
 ## 📝 Task
+
+### Part 1
 The objective of this assignment is to build a blog article manager in React, broken down into the following requirements:
 * Milestone 1: 
 Create a page that displays a list of articles, showing only their titles.
@@ -12,6 +14,14 @@ Add a simple form containing an input field to enter the title of a new blog art
 ### 🌟 Bonus
 * Delete functionality: Add the ability to remove individual articles using a delete icon.
 * Component Architecture: Split the application logic and UI into multiple reusable React components.
+
+### Part 2 (multiple fields form)
+We will add a form with multiple fields to create a new blog post.
+The form will need to send the following data:
+* author (string) - The author of the post
+* title (string) - The title of the post
+* body (string) - The content of the post
+* public (boolean) - Whether the post should be public (true) or a draft (false)
 
 ## 📂 Project Structure
 ```
@@ -45,23 +55,3 @@ REACT-FORM/
 * React: Component-based UI library and hook management.
 * Vite: Build tool and development server.
 * VSCode: IDE.
-
-
-
-Ciao ragazzi,
-esercizio di oggi: React Blog Form
-
-repo: react-form
-
-Continuiamo a estendere il blog in react. Aggiungiamo un form con più campi per creare un nuovo post all’interno di un blog.
-
-I dati che il form dovrà inviare sono i seguenti:
-
-author (string) - L’autore del post
-title (string) - Il titolo del post
-body (string) - Il testo del post
-public (boolean) - Se il post deve essere pubblico (true) o una bozza (false)
-
-BONUS
-
-per gestire il campo "public" proviamo a usare una checkbox, invece di un input in cui scrivere "true" o "false". possiamo distinguere il campo public verificando il suo .name (o il suo .type) con un if.
