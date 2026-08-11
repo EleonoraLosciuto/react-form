@@ -18,10 +18,24 @@ ul li {
     display: flex;
     align-items: center;
     gap: 2rem;
+    border-bottom: 1px solid grey;
 }
 
 ul li button {
     padding: 1rem;
     font-size: 2rem;
     vertical-align: middle;
+}
+
+ul li .public-label {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: bisque;
+}
+
+ul li .non-public {
+    background-color: yellow;
 }
